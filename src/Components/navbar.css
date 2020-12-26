@@ -1,0 +1,14 @@
+.navbar{
+    height: 100px;
+    background-color: #353535;
+}
+.navbar-brand{
+    font-weight: 200px;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-item{
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-item a{
+    color: aliceblue;
+}

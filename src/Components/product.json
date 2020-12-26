@@ -1,0 +1,94 @@
+{
+    
+    "product1":
+        
+        {
+            "id":1,
+            "title":"Nike Air-Max-270",
+            "description":"Handsome Watch",
+            "price":"10,000",
+            "location":"Karachi",
+            "date":"today",
+            "image":"/images/air-max-270.jpg"
+
+        },
+    "product2":
+        {
+            "id":2,
+            "title":"Nike Air-Zoom-Pegasus",
+            "description":"Handsome Watch",
+            "price":"10,000",
+            "location":"Karachi",
+            "date":"today",
+            "image":"/images/air-zoom-pegasus.jpg"
+
+        },
+        "product3":
+        {
+            "id":3,
+            "title":"Nike Cruzrone ",
+            "description":"Handsome Watch",
+            "price":"10,000",
+            "location":"Karachi",
+            "date":"today",
+            "image":"/images/cruzrone.jpg"
+
+        },
+        "product4":
+        {
+            "id":4,
+            "title":"Nike Revolution",
+            "description":"Handsome Watch",
+            "price":"10,000",
+            "location":"Karachi",
+            "date":"today",
+            "image":"/images/revolution.jpg"
+
+        },
+        "product5":
+        {
+            "id":5,
+            "title":"Nike",
+            "description":"Nike Shoes",
+            "price":"20,000",
+            "location":"Karachi",
+            "date":"today",
+            "image":"/images/air-max-270-shoe.png"
+
+        },
+        "product6":
+        {
+            "id":6,
+            "title":"Nike Air-Max",
+            "description":"Handsome Watch",
+            "price":"10,000",
+            "location":"Karachi",
+            "date":"today",
+            "image":"/images/air-max.jpg"
+
+        },
+        "product7":
+        {
+            "id":7,
+            "title":"Nike",
+            "description":"Handsome Watch",
+            "price":"10,000",
+            "location":"Karachi",
+            "date":"today",
+            "image":"/images/nike.jpg"
+            
+
+        },
+        "product8":
+        {
+            "id":8,
+            "title":"Nike Air-Zoom",
+            "description":"Handsome Watch",
+            "price":"5,000",
+            "location":"Karachi",
+            "date":"today",
+            "image":"/images/air-zoom-.jpg"
+
+        }
+    
+}
