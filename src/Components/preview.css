@@ -6,3 +6,29 @@
     font-weight: 700px;
     font-family: 'Montserrat', sans-serif;
 }
+.star{
+    color: yellow;
+    height: 30px;
+}
+.form-label{
+    font-family: 'Montserrat', sans-serif;
+}
+.cart-plus-minus{
+    width: 65px;
+    text-align: center;
+}
+.add-to-cart {
+    background: #1fc0a0;
+    border: 0;
+    border-bottom: 3px solid #0680e5;
+    color: #fff;
+    box-shadow: none;
+    padding: 0 30px;
+    border-radius: 3px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: capitalize;
+    height: 50px;
+    line-height: 50px;
+}

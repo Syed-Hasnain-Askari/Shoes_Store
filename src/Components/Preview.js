@@ -23,12 +23,28 @@ export default function Preview() {
                     </div>
                     <div className="col-md-6">
                         <div className="row mx-auto d-flex justify-content-center">
-                        <h1 className="text-light heading mt-3">{data.title}</h1>     
+                        <h1 className="text-light heading mt-3">{data.title}</h1>
+                        
+                        <span>
+                            <ul className="nav">
+                                <li className="nav-item m-sm-1"> <i className="fa fa-star star" aria-hidden="true"></i></li>
+                                <li className="nav-item m-sm-1"> <i className="fa fa-star star" aria-hidden="true"></i></li>
+                                <li className="nav-item m-sm-1"> <i className="fa fa-star star" aria-hidden="true"></i></li>
+                               <li className="nav-item m-sm-1"><i className="fa fa-star star" aria-hidden="true"></i></li>
+                               <li className="nav-item m-sm-1"><i className="fa fa-star star" aria-hidden="true"></i></li>
+                            </ul>
+                        </span> 
                         <p className="text-light title">Price:${data.price}</p>
-                        <p className="text-light">Simple Product</p>
-                        <h6 className="text-light">Avalibility:
+                        <p className="text-light">Sample Product</p>
+                        <label className="text-light form-label">Avalibility:
                         <span className="text-light text-muted"> In Stock</span>
-                        </h6> 
+                        </label> 
+                       
+                        <label className="text-light form-label">Quantity</label>
+                        <span><input type="text" className="form-control cart-plus-minus" defaultValue="1"></input></span>
+                       
+                        <span><button className="add-to-cart mt-3">Add to Cart</button></span>
+                        
                         </div>
                     </div>
                 </div>

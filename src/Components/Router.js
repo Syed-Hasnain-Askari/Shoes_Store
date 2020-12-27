@@ -13,7 +13,8 @@ function AppRoute() {
             <Switch>
         <Route exact path='/' component={Products}></Route>
         <Route path='/Preview/:id' component={Preview}></Route>      
-            </Switch>
+        <Route path="*" component={Error}></Route>
+        </Switch>
         </Router>
     )
     
