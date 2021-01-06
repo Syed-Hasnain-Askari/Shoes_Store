@@ -10,7 +10,7 @@ import {
 function AppRoute() {
     return(
         <Router>
-            <Switch>
+        <Switch>
         <Route exact path='/' component={Products}></Route>
         <Route path='/Preview/:id' component={Preview}></Route>      
         <Route path="*" component={Error}></Route>
