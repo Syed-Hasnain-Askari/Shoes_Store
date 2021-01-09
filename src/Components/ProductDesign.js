@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 export default function ProductDesign(props) {
     return (
         <div className="col-sm-6 col-lg-3"> 
-        <div className="single-publication" key={props.key}>
+        <div className="single-publication" key={props.id}>
           <figure>
             <a href="#">
               <Link to={`/Preview/${props.data}`}><img src={props.image} className="img-fluid" alt="Publication Image" /></Link>

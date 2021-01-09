@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './product.css';
 import image1 from './img1.jpg';
 import image2 from './img2.jpg';
@@ -8,6 +8,7 @@ import products from './product.json';
 import Navbar from './Navbar';
 import ProductDesign from './ProductDesign';
 export default function Products(){
+  const [product,setProduct] = useState("")
   return(
     <div>
           <Navbar/>
@@ -25,7 +26,7 @@ export default function Products(){
             Mauris vitae libero vitae ipsum malesuada facilisis. Suspendisse convallis massa purus, ut fermentum dolor dignissim sit amet. Ut convallis placerat diam a elementum. Nunc sed mauris odio. Nam auctor lorem at ante hendrerit lacinia. Quisque fringilla hendrerit arcu, id rutrum magna tempus at. Quisque blandit ante neque, sit amet lacinia metus tincidunt non. Duis vitae orci purus. Aliquam placerat scelerisque sagittis. Pellentesque euismod luctus fringilla.</p>
             </div>
         </div>
-    </section>
+    </section>    
           <section className="our-publication pt-100 pb-70">
         <div className="container">
           <div className="section-header">
@@ -33,21 +34,41 @@ export default function Products(){
             <h2 className="text-light">Our Products</h2>
             <p className="fs-6 text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  labore et dolore magna aliqua.</p>
           </div>
+          <div className="row d-flex justify-content-lg-center">
+              <div className="col-md-6">
+              <input type="text" className="form-control mb-5 pb-1" 
+                     onChange={(e)=>setProduct(e.target.value)}
+                     placeholder="Search Product">
+                     
+              </input>
+              </div>
+          </div>
           <div className="row">
-          {Object.keys(products).map((item,index)=>(
-            <ProductDesign
-            data={item}
-            key={index}
-            id={products[item].id}
-            image={products[item].image}
-            title={products[item].title}
-            price={products[item].price}
-            />
-          ))}
+          {Object.keys(products).filter(val=>{
+          if(product==""){
+            return val
+          }
+        else if(products[val].title.toLowerCase().includes(product.toLowerCase())){
+          return val
+        }
+})
+          .map((item,index)=>{
+              return(
+                <ProductDesign
+                data={item}
+                key={index}
+                id={products[item].id}
+                image={products[item].image}
+                title={products[item].title}
+                price={products[item].price}
+                /> 
+                
+              )
+          })
+          }
           </div>
         </div>
       </section>
         </div>
   )
 }
-
